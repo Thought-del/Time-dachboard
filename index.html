@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta tags for SEO -->
+  <title>Time tracking dashboard | Frontend Mentor</title>
+  <meta name="description" content="Track your time efficiently with this interactive dashboard. Monitor Work, Play, Study, Exercise, Social, and Self Care activities with daily, weekly, and monthly statistics. Built with HTML, CSS, and JavaScript.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="time tracking dashboard, productivity app, activity monitoring, time management, work-life balance, JavaScript dashboard, interactive statistics, personal analytics, frontend project, responsive design, daily weekly monthly tracker, study tracker, exercise log, social activity tracking">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Add CSS and JS files -->
+   <link rel="stylesheet" href="style.css">
+   <script defer src="main.js"></script>
+</head>
+<body>
+  <main class="dashboard">
+    <section class="user-profile" aria-labelledby="user-name">
+      <div class="user-info">
+        <div class="user-avatar">
+          <img src="images/image-jeremy.png" alt="Jeremy Robson" width="70" height="69">
+        </div>
+        <div class="user-details">
+          <p id="report">Report for</p>
+          <h1 id="user-name">Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <div class="timeframe-selector" role="tablist" aria-label="Select timeframe">
+        <button class="timeframe-btn active" role="tab" aria-selected="true" data-timeframe="daily">Daily</button>
+        <button class="timeframe-btn" role="tab" aria-selected="false" data-timeframe="weekly">Weekly</button>
+        <button class="timeframe-btn" role="tab" aria-selected="false" data-timeframe="monthly">Monthly</button>
+      </div>
+    </section>
+
+    <article class="activity-card card-work" data-activity="work" aria-labelledby="work-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="work-title">Work</h2>
+          <button class="options-btn" aria-label="More options for Work">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours" data-current>32hrs</p>
+          <p class="previous-hours" data-previous>Last Week - 36hrs</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="activity-card card-play" data-activity="play" aria-labelledby="play-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="play-title">Play</h2>
+          <button class="options-btn" aria-label="More options for Play">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours">10hrs</p>
+          <p class="previous-hours">Last Week - 8hrs</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="activity-card card-study" data-activity="study" aria-labelledby="study-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="study-title">Study</h2>
+          <button class="options-btn" aria-label="More options for Study">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours">4hrs</p>
+          <p class="previous-hours">Last Week - 7hrs</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="activity-card card-exercise" data-activity="exercise" aria-labelledby="exercise-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="exercise-title">Exercise</h2>
+          <button class="options-btn" aria-label="More options for Exercise">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours">4hrs</p>
+          <p class="previous-hours">Last Week - 5hrs</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="activity-card card-social" data-activity="social" aria-labelledby="social-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="social-title">Social</h2>
+          <button class="options-btn" aria-label="More options for Social">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours">5hrs</p>
+          <p class="previous-hours">Last Week - 10hrs</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="activity-card card-self-care" data-activity="self-care" aria-labelledby="self-care-title">
+      <div class="card-content">
+        <div class="activity-header">
+          <h2 id="self-care-title">Self Care</h2>
+          <button class="options-btn" aria-label="More options for Self Care">
+            <img src="images/icon-ellipsis.svg" alt="More options" aria-hidden="true" loading="lazy">
+          </button>
+        </div>
+        <div class="activity-status">
+          <p class="current-hours">2hrs</p>
+          <p class="previous-hours">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
